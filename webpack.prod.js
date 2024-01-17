@@ -1,8 +1,8 @@
 import { merge } from "webpack-merge"
-
-import common from "./webpack.common.js"
 import TerserPlugin from "terser-webpack-plugin"
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin"
+
+import common from "./webpack.common.js"
 
 const config = {
   mode: "production",
@@ -35,4 +35,4 @@ const config = {
   },
 }
 
-export default (common, config)
+export default merge(common, config)

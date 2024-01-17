@@ -34,7 +34,7 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "assets/css/style.css",
+      filename: "assets/css/StyleSheet.css",
     }),
     new HtmlWebpackPlugin({
       template: "client/index.html",
